@@ -1,0 +1,75 @@
+
+<p *ngIf="!rovers"><em>Loading...</em></p>
+<h3 id="tableLabel">Available Rovers</h3>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="rovers">
+    <thead>
+        <tr>
+            <th>Rover Number</th>
+            <th>Instructions</th>
+            <th>Coordinates to map</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let rover of rovers">
+            <td>{{ rover.roverNumber }}</td>
+            <td>{{ rover.instructions }}</td>
+            <td>{{ rover.coordinates | json }}</td>
+        </tr>
+    </tbody>
+</table>
+<h1>Mars(5x5 canvas)</h1>
+<input type="button" value="Click to start maping" (click)="MapMars()">
+<div class="canvasMars">
+    <div style="padding-top: 150px; padding-right: 20px;">W</div>
+    <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="rovers">
+        <thead>
+            <tr>
+                <th>N</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="C04">0-4</td>
+                <td id="C14">1-4</td>
+                <td id="C24">2-4</td>
+                <td id="C34">3-4</td>
+                <td id="C44">4-4</td>
+            </tr>
+            <tr>
+                <td id="C03">0-3</td>
+                <td id="C13">1-3</td>
+                <td id="C23">2-3</td>
+                <td id="C33">3-3</td>
+                <td id="C43">4-3</td>
+            </tr>
+            <tr>
+                <td id="C02">0-2</td>
+                <td id="C12">1-2</td>
+                <td id="C22">2-2</td>
+                <td id="C32">3-2</td>
+                <td id="C42">4-2</td>
+            </tr>
+            <tr>
+                <td id="C01">0-1</td>
+                <td id="C11">1-1</td>
+                <td id="C21">2-1</td>
+                <td id="C31">3-1</td>
+                <td id="C41">4-1</td>
+            </tr>
+            <tr>
+                <td id="C00">0-0</td>
+                <td id="C10">1-0</td>
+                <td id="C20">2-0</td>
+                <td id="C30">3-0</td>
+                <td id="C40">4-0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>S</th>
+            </tr>
+        </tfoot>
+    </table>
+    <div style="padding-top: 150px; padding-left: 20px;">E</div>
+</div>
