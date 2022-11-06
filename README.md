@@ -14,3 +14,6 @@ Eg: 12N|LMLMLMLMM
 
 The possible letters are 'L', 'R' and 'M'. 'L' and 'R' makes the rover spin 90 degrees left or right respectively, without moving from its current spot. 
 'M' means move forward one grid point and maintain the same heading
+
+
+![MarsRovers1](https://user-images.githubusercontent.com/14928563/200193616-18f2e9dc-5a2a-4788-a1e8-708356a80e47.PNG)
