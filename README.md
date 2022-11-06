@@ -4,6 +4,7 @@ MarsRovers is a simple app that maps a 2D surface
 
 The app was developed with Visual Studio 2019 using the .NET libraries and an Angular template for the front end.
 Due to the changes to Office 365 the movements.csv file has turned into Movements.txt, the logic behind reading from the file is the same.
+MarsRovers took about 3-4 hours to complete
 
 The app displays a 2D space and divides it into coordinates and the four cardinal compass points,
 each division of the canvas will be mapped based on a set of instructions that are added to the Movements.txt file found in the Data directory
